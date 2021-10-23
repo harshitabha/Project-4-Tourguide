@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cyan_500">#96ded1</color>
+    <color name="cyan_200">	#a7c3c1</color>
+    <color name="mid_trans">#b8a7b2</color>
+    <color name="pink_200">	#ca8ba2</color>
+    <color name="pink_500">	#db7093</color>
+
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Tour Guide</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Seoul, Korea</string>
+    <string name="nav_header_subtitle">The Vibrant City</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_location">Attractions</string>
+    <string name="menu_restaurant">Restaurants</string>
+    <string name="menu_hotel">Hotels</string>
+</resources>
