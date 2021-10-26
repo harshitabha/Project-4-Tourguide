@@ -1,4 +1,4 @@
-package com.example.tourguide.ui.slideshow;
+package com.example.tourguide.ui.restaurants;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,23 +13,23 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.tourguide.R;
-import com.example.tourguide.databinding.FragmentSlideshowBinding;
+import com.example.tourguide.databinding.FragmentRestaurantsBinding;
 
-public class SlideshowFragment extends Fragment {
+public class RestaurantsFragment extends Fragment {
 
-    private SlideshowViewModel slideshowViewModel;
-    private FragmentSlideshowBinding binding;
+    private com.example.tourguide.ui.restaurants.RestaurantsViewModel restaurantsViewModel;
+    private FragmentRestaurantsBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        slideshowViewModel =
-                new ViewModelProvider(this).get(SlideshowViewModel.class);
+        restaurantsViewModel =
+                new ViewModelProvider(this).get(com.example.tourguide.ui.restaurants.RestaurantsViewModel.class);
 
-        binding = FragmentSlideshowBinding.inflate(inflater, container, false);
+        binding = FragmentRestaurantsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textSlideshow;
-        slideshowViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        final TextView textView = binding.textRestaurants;
+        restaurantsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
