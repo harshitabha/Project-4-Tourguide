@@ -1,4 +1,4 @@
-package com.example.tourguide.ui.gallery;
+package com.example.tourguide.ui.attractions;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,23 +13,23 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.tourguide.R;
-import com.example.tourguide.databinding.FragmentGalleryBinding;
+import com.example.tourguide.databinding.FragmentAttractionsBinding;
 
-public class GalleryFragment extends Fragment {
+public class AttractionsFragment extends Fragment {
 
-    private GalleryViewModel galleryViewModel;
-    private FragmentGalleryBinding binding;
+    private com.example.tourguide.ui.attractions.AttractionsViewModel attractionsViewModel;
+    private FragmentAttractionsBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        galleryViewModel =
-                new ViewModelProvider(this).get(GalleryViewModel.class);
+        attractionsViewModel =
+                new ViewModelProvider(this).get(com.example.tourguide.ui.attractions.AttractionsViewModel.class);
 
-        binding = FragmentGalleryBinding.inflate(inflater, container, false);
+        binding = FragmentAttractionsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textGallery;
-        galleryViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        final TextView textView = binding.textAttractions;
+        attractionsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

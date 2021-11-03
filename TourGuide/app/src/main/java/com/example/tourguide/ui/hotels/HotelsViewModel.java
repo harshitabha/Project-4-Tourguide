@@ -1,16 +1,16 @@
-package com.example.tourguide.ui.gallery;
+package com.example.tourguide.ui.hotels;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class GalleryViewModel extends ViewModel {
+public class HotelsViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public GalleryViewModel() {
+    public HotelsViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is gallery fragment");
+        mText.setValue("This is a hotels fragment");
     }
 
     public LiveData<String> getText() {
