@@ -29,20 +29,34 @@
                 app:cardCornerRadius="10dp"
 
                 >
-                <ImageView
-                    android:id="@+id/img_hotel1"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:scaleType="centerCrop"
-                    android:layout_marginBottom="16dp"/>
-                <Button
-                    android:id="@+id/address_hotel1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Find Me"
-                    android:textColor="@color/white"
-                    android:backgroundTint="@color/pink_200"/>
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/img_hotel1"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:layout_marginBottom="16dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/hotel_txt1"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:layout_marginBottom="16dp"/>
+                    <Button
+                        android:id="@+id/address_hotel1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Find Me"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/pink_200"
+                        android:layout_marginBottom="8dp"/>
+                </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -52,20 +66,33 @@
                 android:layout_margin="10dp"
                 app:cardCornerRadius="10dp"
                 >
-                <ImageView
-                    android:id="@+id/img_hotel2"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:scaleType="centerCrop"
-                    android:layout_marginBottom="16dp"/>
-                <Button
-                    android:id="@+id/address_hotel2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Find Me"
-                    android:textColor="@color/white"
-                    android:backgroundTint="@color/pink_200"/>
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/img_hotel2"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:layout_marginBottom="16dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/hotel_txt2"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:layout_marginBottom="16dp"/>
+                    <Button
+                        android:id="@+id/address_hotel2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Find Me"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/pink_200"
+                        android:layout_marginBottom="8dp"/>
+                </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -74,20 +101,33 @@
                 android:layout_gravity="fill"
                 android:layout_margin="10dp"
                 app:cardCornerRadius="10dp">
-                <ImageView
-                    android:id="@+id/img_hotel3"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:scaleType="centerCrop"
-                    android:layout_marginBottom="16dp"/>
-                <Button
-                    android:id="@+id/address_hotel3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Find Me"
-                    android:textColor="@color/white"
-                    android:backgroundTint="@color/pink_200"/>
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/img_hotel3"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:layout_marginBottom="16dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/hotel_txt3"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:layout_marginBottom="16dp"/>
+                    <Button
+                        android:id="@+id/address_hotel3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Find Me"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/pink_200"
+                        android:layout_marginBottom="8dp"/>
+                </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -96,20 +136,33 @@
                 android:layout_gravity="fill"
                 android:layout_margin="10dp"
                 app:cardCornerRadius="10dp">
-                <ImageView
-                    android:id="@+id/img_hotel4"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:scaleType="centerCrop"
-                    android:layout_marginBottom="16dp"/>
-                <Button
-                    android:id="@+id/address_hotel4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Find Me"
-                    android:textColor="@color/white"
-                    android:backgroundTint="@color/pink_200"/>
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/img_hotel4"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:layout_marginBottom="16dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/hotel_txt4"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:layout_marginBottom="16dp"/>
+                    <Button
+                        android:id="@+id/address_hotelp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Find Me"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/pink_200"
+                        android:layout_marginBottom="8dp"/>
+                </LinearLayout>
             </androidx.cardview.widget.CardView>
         </GridLayout>
     </LinearLayout>
