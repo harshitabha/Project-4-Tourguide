@@ -18,6 +18,7 @@
         their mark on everything from fashion to food to architecture to art.
     </string>
 
+    <!--Hotel Info-->
     <string name="hotel_txt0">
         In one of Asia\'s most dynamic and economically powerful cities, the hotel effectively blends comfortable
         elegance with cutting\-edge technology. The famous Peter Remedios designed the interiors, which are a perfect combination
@@ -38,5 +39,28 @@
         Lotte Hotel Seoul is one of Korea\'s finest 5\-star luxury hotels, ideally located near Myeongdong
         in the heart of Seoul\'s major business area. Four world\-class interior design firms collaborated
         to create 1,015 guest rooms in the Main Tower and Executive Tower.
+    </string>
+
+    <!--restaurant Info-->
+    <string name="rest_txt0">
+        Tony Yoo, a Michelin\-starred chef, has relocated to the center of Bukchon Hanok Village, an area packed with
+        traditional Korean homes. Yoo mixes temple cuisine, a vegetable\-centered meal that originated in Korea\'s Buddhist
+        temples, and traditional Korean dishes in a peaceful Hanok environment to create his own beautiful modern Korean cuisine.
+    </string>
+    <string name="rest_txt1">
+        Diners enjoy a constantly changing tasting menu with meals such as seared scallops and Iberico pork steaks
+        while viewing Changdeokgung Castle, a majestic Joseon Dynasty palace. Three sides of the restaurant are constructed of
+        glass, allowing for a panoramic view from everywhere within. This is the place to go if you want a restaurant with a distinctive perspective of Seoul.
+    </string>
+    <string name="rest_txt2">
+        The majority of tourists that visit Seoul intend to ride the cable cars to the summit of Namsan to take in the scenery.
+        A lovely traditional Korean home that doubles as a restaurant is not far from the cable car entrance. Mokmeoksanbang,
+        named after Namsan\'s previous name, Mokmeoksan, provides one of the greatest varieties of bibimbap in town, a rice bowl
+        topped with meat, eggs, and fresh veggies obtained from farmers all over the nation.
+    </string>
+    <string name="rest_txt3">
+        If you want to get lost in Korean street\-food heaven, go to Gwangjang Market. Gwangjang is Korea\'s
+        largest hanbok and textile market, but it is also the country\'s oldest street\-food market, with
+        food stalls offering a diverse range of street\-food options. Your hunger will be whet by the scents, sights, and bright energy.
     </string>
 </resources>
