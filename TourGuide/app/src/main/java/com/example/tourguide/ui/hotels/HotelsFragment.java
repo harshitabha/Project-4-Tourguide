@@ -60,7 +60,28 @@ public class HotelsFragment extends Fragment implements View.OnClickListener{
                             if(btnPointer==0)
                             {
                                 Intent i = new Intent(Intent.ACTION_VIEW);
-                                i.setData(Uri.parse("geo:37.582717, 126.984904"));
+                                i.setData(Uri.parse("geo:37.582717, 126.984904")); // coords for the 1st hotel
+
+                                startActivity(i);
+                            }
+                            else if(btnPointer==1)
+                            {
+                                Intent i = new Intent(Intent.ACTION_VIEW);
+                                i.setData(Uri.parse("geo:37.504096, 127.003112")); // coords for the 2nd hotel
+
+                                startActivity(i);
+                            }
+                            else if(btnPointer==2)
+                            {
+                                Intent i = new Intent(Intent.ACTION_VIEW);
+                                i.setData(Uri.parse("geo:37.509351374447455, 127.06061249023237")); // coords for the 3rd hotel
+
+                                startActivity(i);
+                            }
+                            else
+                            {
+                                Intent i = new Intent(Intent.ACTION_VIEW);
+                                i.setData(Uri.parse("geo:37.5653, 126.9810")); // coords for the 4th hotel
 
                                 startActivity(i);
                             }
