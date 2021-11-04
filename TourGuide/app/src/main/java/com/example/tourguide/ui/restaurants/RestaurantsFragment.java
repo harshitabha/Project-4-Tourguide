@@ -18,7 +18,7 @@ import androidx.lifecycle.ViewModelProvider;
 import com.example.tourguide.R;
 import com.example.tourguide.databinding.FragmentRestaurantsBinding;
 
-public class restaurantsFragment extends Fragment implements View.OnClickListener{
+public class RestaurantsFragment extends Fragment implements View.OnClickListener{
 
     private RestaurantsViewModel restaurantsViewModel;
     private FragmentRestaurantsBinding binding;
