@@ -12,9 +12,30 @@
     <string name="menu_restaurant">Restaurants</string>
     <string name="menu_hotel">Hotels</string>
 
+    <string name="address">Find Us!</string>
+
     <string name="intro_blub">
         Seoul is a city filled with vibrancy, consisting of both traditional Korean culture and modern culture, making it a popular
         destination among tourists. Seoul is riding a creative wave. The city has become a creative sanctuary for people wanting to make
         their mark on everything from fashion to food to architecture to art.
     </string>
+
+    <!--Hotel Info-->
+    <string name="hotel0">The Shilla Seoul</string>
+    <string name="hotel1">JW Marriott Hotel Seoul</string>
+    <string name="hotel2">Intercontinental Grand Seoul Parnas </string>
+    <string name="hotel3">Lotte Hotel Seoul</string>
+
+    <!--restaurant Info-->
+    <string name="rest0">Doore Yoo</string>
+    <string name="rest1">Dining In Space</string>
+    <string name="rest2">Mokmeoksanbang</string>
+    <string name="rest3">Gwangjang Market</string>
+
+    <!--attractions info-->
+    <string name="attract0">Seoul Tower</string>
+    <string name="attract1">Bongeunsa</string>
+    <string name="attract2">Lotte World Tower</string>
+    <string name="attract3">Dongdaemun Design Plaza</string>
+
 </resources>
