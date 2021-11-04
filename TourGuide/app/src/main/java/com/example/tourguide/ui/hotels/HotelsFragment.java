@@ -24,6 +24,7 @@ public class HotelsFragment extends Fragment implements View.OnClickListener{
     private HotelsViewModel hotelsViewModel;
     private FragmentHotelsBinding binding;
     private Button[] mapBtn;
+    private TextView[] infoTxt;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -33,10 +34,7 @@ public class HotelsFragment extends Fragment implements View.OnClickListener{
         binding = FragmentHotelsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.hotelTxt1;
-
-
-
+        infoTxt = new TextView[4];
 
         hotelsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
@@ -44,6 +42,7 @@ public class HotelsFragment extends Fragment implements View.OnClickListener{
                 //initializing the buttons and setting it to the onclick listener
                 mapBtn = new Button[4];
                 String btnID;
+                String txtID;
                 for(int b = 0; b < mapBtn.length; b++)
                 {
                     btnID = "address_hotel" + b;
@@ -57,36 +56,33 @@ public class HotelsFragment extends Fragment implements View.OnClickListener{
                         public void onClick(View v) {
                             String btnID = v.getResources().getResourceEntryName(v.getId());
                             int btnPointer = Integer.parseInt(btnID.substring(btnID.length() - 1)); //get the last character of the id (this will be a number)
-                            if(btnPointer==0)
-                            {
-                                Intent i = new Intent(Intent.ACTION_VIEW);
-                                i.setData(Uri.parse("geo:37.582717, 126.984904")); // coords for the 1st hotel
-
-                                startActivity(i);
-                            }
-                            else if(btnPointer==1)
-                            {
-                                Intent i = new Intent(Intent.ACTION_VIEW);
-                                i.setData(Uri.parse("geo:37.504096, 127.003112")); // coords for the 2nd hotel
-
-                                startActivity(i);
-                            }
-                            else if(btnPointer==2)
-                            {
-                                Intent i = new Intent(Intent.ACTION_VIEW);
-                                i.setData(Uri.parse("geo:37.509351374447455, 127.06061249023237")); // coords for the 3rd hotel
-
-                                startActivity(i);
-                            }
-                            else
-                            {
-                                Intent i = new Intent(Intent.ACTION_VIEW);
-                                i.setData(Uri.parse("geo:37.5653, 126.9810")); // coords for the 4th hotel
-
-                                startActivity(i);
-                            }
+                            if(btnPointer==0) openMap("37.5577", "127.0076", "249, Dongho-ro, Jung-gu, 04605 Seoul, Korea");
+                            else if(btnPointer==1) openMap("37.5039", "127.0047", "JW Marriott Hotel Seoul, 176 Sinbanpo-ro, Banpo-dong, Seocho-gu, Seoul, South Korea");
+                            else if(btnPointer==2) openMap("37.508814", "127.060878", "521 Teheran-ro, Samseong 1(il)-dong, Gangnam-gu, Seoul, South Korea");
+                            else openMap("37.5653", "126.9810", "30 Eulji-ro, Euljiro 1(il)-ga, Jung-gu, Seoul, South Korea");
                         }
                     }); // onclick listener
+
+                    //initializing the text views
+                    txtID = "hotel_txt" + b;
+                    //int tResourceID = ;
+                    infoTxt[b] = (TextView) getView().findViewById(getResources().getIdentifier(txtID, "id",
+                            getActivity().getPackageName()));
+                    if(b==0) infoTxt[b].setText("In one of Asia\'s most dynamic and economically powerful cities, " +
+                            "the hotel effectively blends comfortable elegance with cutting-edge technology. " +
+                            "The famous Peter Remedios designed the interiors which are a perfect combination of " +
+                            "East and West, while a large number of world-class masterpieces light the hotel with " +
+                            "top-notch elegance.");
+                    else if(b==1) infoTxt[b].setText("JW Marriott Hotel Seoul, a renowned location in the Gangnam District, offers 5-star elegance amid some of" +
+                            " South Korea\'s most recognized attractions. Explore South Korea\\'s renowned Gangnam District, which is home " +
+                            "to some of the best shopping, eating, and cultural activities. In a vibrant event venue enhanced by contemporary " +
+                            "technology, personalized food, and professional planners, you can host faultless meetings, weddings, and social gatherings.");
+                    else if(b==2) infoTxt[b].setText("Grand InterContinental Seoul Parnas, located in the heart of Gangnam\'s renowned neighborhood, provides " +
+                            "an exceptional experience for both leisure and business guests. The hotel is next to the COEX Convention and has " +
+                            "easy access to one of Korea's best retail, leisure, and business complexes.");
+                    else infoTxt[b].setText("Lotte Hotel Seoul is one of Korea\\'s finest 5-star luxury hotels, ideally located near Myeongdong " +
+                            "in the heart of Seoul\\'s major business area. Four world-class interior design firms collaborated " +
+                            "to create 1,015 guest rooms in the Main Tower and Executive Tower.");
                 }
             }
         });
@@ -102,5 +98,20 @@ public class HotelsFragment extends Fragment implements View.OnClickListener{
     @Override//to not have an error
     public void onClick(View v) {
 
+    }
+
+    private void openMap(String coord1, String coord2, String address)
+    {
+        // Create a Uri from an intent string. Use the result to create an Intent.
+        Uri gmmIntentUri =
+        Uri.parse("geo:" + coord1 +"," + coord2 + "?q=" + Uri.encode(address));
+
+        // Create an Intent from gmmIntentUri. Set the action to ACTION_VIEW
+        Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+        // Make the Intent explicit by setting the Google Maps package
+        mapIntent.setPackage("com.google.android.apps.maps");
+
+        // Attempt to start an activity that can handle the Intent
+        startActivity(mapIntent);
     }
 }
