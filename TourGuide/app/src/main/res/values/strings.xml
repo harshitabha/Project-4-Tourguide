@@ -17,4 +17,26 @@
         destination among tourists. Seoul is riding a creative wave. The city has become a creative sanctuary for people wanting to make
         their mark on everything from fashion to food to architecture to art.
     </string>
+
+    <string name="hotel_txt0">
+        In one of Asia\'s most dynamic and economically powerful cities, the hotel effectively blends comfortable
+        elegance with cutting-edge technology. The famous Peter Remedios designed the interiors, which are a perfect combination
+        of East and West, while a large number of world-class masterpieces light the hotel with top-notch elegance.
+    </string>
+    <string name="hotel_txt1">
+        JW Marriott Hotel Seoul, a renowned location in the Gangnam District, offers 5-star elegance amid some of
+        South Korea\'s most recognized attractions. Explore South Korea\'s renowned Gangnam District, which is home
+        to some of the best shopping, eating, and cultural activities. In a vibrant event venue enhanced by contemporary
+        technology, personalized food, and professional planners, you can host faultless meetings, weddings, and social gatherings.
+    </string>
+    <string name="hotel_txt2">
+        Grand InterContinental Seoul Parnas, located in the heart of Gangnam\'s renowned neighborhood, provides
+        an exceptional experience for both leisure and business guests. The hotel is next to the COEX Convention and has
+        easy access to one of Korea's best retail, leisure, and business complexes.
+    </string>
+    <string name="hotel_txt3">
+        LOTTE HOTEL SEOUL is one of Korea\'s finest 5-star luxury hotels, ideally located near Myeongdong
+        in the heart of Seoul\'s major business area. Four world-class interior design firms collaborated
+        to create 1,015 guest rooms in the Main Tower and Executive Tower.
+    </string>
 </resources>
